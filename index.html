@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate</title>
+</head>
+<style>
+    body{
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+    }
+    nav{
+            background-color: aliceblue;
+            color: black;
+            padding: 20px;
+            font-size: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+    }
+    #a4,#a3, #a2,#a1{
+            padding: 20px;
+            color: black;
+            display: inline-flex;
+            text-decoration: none;
+            flex-flow: row wrap;
+            align-items:center;
+           justify-content: flex-end;
+    }
+    #a4{
+            display: flex;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .container{
+            overflow: hidden;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #cont1{
+            display:inline-flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        #cont2{
+            display:flex;
+            align-content: center;
+            justify-content: center;
+        }
+        #a5 ,#bt{
+            background-color: black;
+            color: white;
+            border: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            text-decoration: none;
+            display:inline-flex;
+            width: 100px;;
+        }
+        #par1{
+            font-size: 60px;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            padding-top: 20px;
+            float: left;
+        }
+        #par2{
+            color: gray;
+            font-size: larger;
+            padding-bottom: 30px;
+        }
+        .services{
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            @media (max-width:715px) {
+                flex-direction: column;
+                width: 75vw;
+                justify-content: space-around;
+                align-items: space-around;
+            }
+        }
+        .servcard{
+            display: inline-flex;
+            flex-direction:column;
+            width: 30%;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: white;
+            height: 500px;
+            border: 3px solid black;
+            overflow: hidden;
+            @media (max-width:715px) {
+                width:fit-content;
+                height: 400px;
+            }
+        }
+        #img2{
+            width: fit-content;
+            height: 50%;
+            overflow: hidden;
+        }
+        #img3{
+            width: fit-content;
+            height: 50%;
+            overflow: hidden;
+        }
+        #img4{
+            width: fit-content;
+            height: 50%;
+            overflow: hidden
+        }
+        .team{
+            display: flex;
+            justify-content: space-around;
+        }
+        #member1{
+            display: flex;
+            border: 3px solid black;
+            border-radius: 4px;
+            justify-content: space-between;
+        }
+        #member2{
+            display: flex;
+            border: 3px solid black;
+            border-radius: 4px;
+            justify-content: space-around;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+</style>
+<body>
+    <nav>
+        <h1><p style="display: inline;">StudyMate</p></h1>
+        <a href="#" id="a1">Services</a>
+        <a href="#" id="a2">About</a>
+        <a href="#" id="a3">Contact</a>
+        <a href="#" id="a4">Sign up</a>
+    </nav>
+    <div class="container">
+        <div class="content" id="cont1">
+            <p class="p1" id="par1">Get Ready to Ace Your Exam with us.</p>
+            <p class="p1" id="par2">Welcome to us a Platform created by learners for other learners.We're here to help you ace your exams with our personalized study plan, learning community, and exam prep Services</p>
+            <a href="#" id="a5">View All Services</a>
+        </div>
+        <div class="content" id="cont2">
+            <img src="pichead.jpeg" alt="pic of girls" id="img1" width="300px">
+        </div>
+    </div>
+         <div class="container">    
+         <h2><em>Our Services</em></h2>
+         <div class="services">
+            <div class="servcard">
+                <img src="exam prep.jpeg" alt="pic random" id="img2">
+                <p>
+                    <h2>Exam Prep</h2>
+                    <p>Our exam Prep resources  and Flexible Study optons willhelp you approach your next exam with confidence</p>
+                </p>
+            </div>
+            <div class="servcard">
+                <img src="perso.jpeg" alt="pic random" id="img3">
+                <p>
+                    <h2>
+                        Personalized Study
+                    </h2>
+                    <p>
+                        Our Personlized Study sevices Provide customized study plans tailored to your learning needs and goals, along with ongoing support and guidance from expert instructors.
+                    </p>
+                </p>
+            </div>
+            <div class="servcard">
+                <img src="lerncom.jpeg" alt="pic random" id="img4">
+                <h2>Learning Community</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nihil expedita! Aliquam repudiandae fugiat doloribus. Consectetur sint placeat excepturi, possimus maxime ea distinctio.</p>
+            </div>
+         </div>
+         </div>
+        <div class="container">
+            <h2><em>Our Team</em></h2>
+            <br>
+            <div class="team"> 
+                <div id="member1">
+                <img src="pp.jpg" alt="man of business"  width="25%">
+                <div class="text">
+                <p>
+                    <h2>Naman Sharma</h2>
+                    <h4>Founder & CEO</h4>
+                    <p>
+                        Naman is a Lifelong learner passionate about helping others succed. he started StudyMate to provide persoanlised study plans that helps student feel confident and ready for exams.
+                    </p>
+                </p>
+                </div>
+            </div>
+            <div id="member2">
+                <img src="pp.jpg" alt="man of culture" width="25%">
+                <div class="text">
+                <p>
+                    <h2>
+                        Yashvardhan Sharma
+                    </h2>
+                    <h4>
+                        Community manager
+                    </h4>
+                    <p>
+                        Yashvardhan is a enthsiastic learner who loves to connect with others. He manages ourLearning community and hepls student find support, motivation, and succes.
+                    </p>
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Enter Your Email address to register to our Newsletter</p>
+            <input type="email" placeholder="Email Address" width="500px">
+            <input type="submit" value="submit" id="bt">
+        </footer>
+</body>
+</html>
